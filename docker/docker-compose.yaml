@@ -165,6 +165,8 @@ services:
     build:
       context: ..
       dockerfile: sapling-dev-server/Dockerfile
+      args:
+        PUBLIC_URL_PARTIAL: '/sapling-dev-server'
     container_name: sapling-dev-server-beta
     expose:
       - 80
